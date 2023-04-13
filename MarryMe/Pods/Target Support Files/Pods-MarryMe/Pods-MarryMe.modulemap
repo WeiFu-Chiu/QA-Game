@@ -1,0 +1,6 @@
+framework module Pods_MarryMe {
+  umbrella header "Pods-MarryMe-umbrella.h"
+
+  export *
+  module * { export * }
+}
