@@ -16,6 +16,8 @@
 		71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF0929E5219E00A09AAA /* LaunchScreen.storyboard */; };
 		71A7CF1529E5313D00A09AAA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CF1429E5313D00A09AAA /* CustomView.swift */; };
 		71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF1629E5400F00A09AAA /* Content.storyboard */; };
+		71E3484529E7E4A700FDC335 /* 74348-new-mail.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484329E7E4A700FDC335 /* 74348-new-mail.json */; };
+		71E3484629E7E4A700FDC335 /* 106954-text-icon-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */; };
 		71FF8AD929E5426200B8BAAE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF8AD829E5426200B8BAAE /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		71A7CF0C29E5219E00A09AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71A7CF1429E5313D00A09AAA /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		71A7CF1629E5400F00A09AAA /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		71E3484329E7E4A700FDC335 /* 74348-new-mail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "74348-new-mail.json"; sourceTree = "<group>"; };
+		71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "106954-text-icon-animation.json"; sourceTree = "<group>"; };
 		71FF8AD829E5426200B8BAAE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +58,6 @@
 				3D8EC7ECAFAF8AFEF7D279B1 /* Pods-MarryMe.debug.xcconfig */,
 				216BB259430614A8247772BB /* Pods-MarryMe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,6 +104,7 @@
 		71A7CF1229E5310300A09AAA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				71E3484129E7E47A00FDC335 /* Assets */,
 				71A7CEFE29E5219D00A09AAA /* AppDelegate.swift */,
 				71A7CF0029E5219D00A09AAA /* SceneDelegate.swift */,
 				71A7CF0729E5219E00A09AAA /* Assets.xcassets */,
@@ -115,6 +119,23 @@
 				71A7CF1429E5313D00A09AAA /* CustomView.swift */,
 			);
 			path = Utities;
+			sourceTree = "<group>";
+		};
+		71E3484129E7E47A00FDC335 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				71E3484229E7E48300FDC335 /* Animation */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		71E3484229E7E48300FDC335 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				71E3484329E7E4A700FDC335 /* 74348-new-mail.json */,
+				71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */,
+				71E3484629E7E4A700FDC335 /* 106954-text-icon-animation.json in Resources */,
 				71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */,
+				71E3484529E7E4A700FDC335 /* 74348-new-mail.json in Resources */,
 				71A7CF0829E5219E00A09AAA /* Assets.xcassets in Resources */,
 				71A7CF0629E5219D00A09AAA /* Main.storyboard in Resources */,
 			);
