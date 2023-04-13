@@ -16,8 +16,9 @@
 		71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF0929E5219E00A09AAA /* LaunchScreen.storyboard */; };
 		71A7CF1529E5313D00A09AAA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CF1429E5313D00A09AAA /* CustomView.swift */; };
 		71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF1629E5400F00A09AAA /* Content.storyboard */; };
-		71E3484529E7E4A700FDC335 /* 74348-new-mail.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484329E7E4A700FDC335 /* 74348-new-mail.json */; };
-		71E3484629E7E4A700FDC335 /* 106954-text-icon-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */; };
+		71E3484529E7E4A700FDC335 /* new-mail.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484329E7E4A700FDC335 /* new-mail.json */; };
+		71E3484629E7E4A700FDC335 /* text-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484429E7E4A700FDC335 /* text-icon.json */; };
+		71E3484829E7F59700FDC335 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3484729E7F59700FDC335 /* BaseViewController.swift */; };
 		71FF8AD929E5426200B8BAAE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF8AD829E5426200B8BAAE /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +36,9 @@
 		71A7CF0C29E5219E00A09AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71A7CF1429E5313D00A09AAA /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		71A7CF1629E5400F00A09AAA /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
-		71E3484329E7E4A700FDC335 /* 74348-new-mail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "74348-new-mail.json"; sourceTree = "<group>"; };
-		71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "106954-text-icon-animation.json"; sourceTree = "<group>"; };
+		71E3484329E7E4A700FDC335 /* new-mail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "new-mail.json"; sourceTree = "<group>"; };
+		71E3484429E7E4A700FDC335 /* text-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "text-icon.json"; sourceTree = "<group>"; };
+		71E3484729E7F59700FDC335 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71FF8AD829E5426200B8BAAE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				71A7CF1429E5313D00A09AAA /* CustomView.swift */,
+				71E3484729E7F59700FDC335 /* BaseViewController.swift */,
 			);
 			path = Utities;
 			sourceTree = "<group>";
@@ -132,8 +135,8 @@
 		71E3484229E7E48300FDC335 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				71E3484329E7E4A700FDC335 /* 74348-new-mail.json */,
-				71E3484429E7E4A700FDC335 /* 106954-text-icon-animation.json */,
+				71E3484329E7E4A700FDC335 /* new-mail.json */,
+				71E3484429E7E4A700FDC335 /* text-icon.json */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -199,9 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */,
-				71E3484629E7E4A700FDC335 /* 106954-text-icon-animation.json in Resources */,
+				71E3484629E7E4A700FDC335 /* text-icon.json in Resources */,
 				71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */,
-				71E3484529E7E4A700FDC335 /* 74348-new-mail.json in Resources */,
+				71E3484529E7E4A700FDC335 /* new-mail.json in Resources */,
 				71A7CF0829E5219E00A09AAA /* Assets.xcassets in Resources */,
 				71A7CF0629E5219D00A09AAA /* Main.storyboard in Resources */,
 			);
@@ -261,6 +264,7 @@
 				71A7CF1529E5313D00A09AAA /* CustomView.swift in Sources */,
 				71A7CEFF29E5219D00A09AAA /* AppDelegate.swift in Sources */,
 				71A7CF0129E5219D00A09AAA /* SceneDelegate.swift in Sources */,
+				71E3484829E7F59700FDC335 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +415,11 @@
 				DEVELOPMENT_TEAM = JQ5CDPZ8ZK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarryMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Q & A";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,10 +446,11 @@
 				DEVELOPMENT_TEAM = JQ5CDPZ8ZK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarryMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Q & A";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -9,5 +9,11 @@ import Foundation
 import UIKit
 
 class ContentViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    @IBAction func backAction(_ sender: Any) {
+        dismiss(animated: true)
+    }
 }
