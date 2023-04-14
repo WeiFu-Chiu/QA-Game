@@ -11,6 +11,38 @@ import Lottie
 
 
 class BaseViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        tapGestureRecognizer.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        
+    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
+        
+        let scene = UIApplication.shared.connectedScenes
+        guard let windowScene = scene.first as? UIWindowScene,
+              let window = windowScene.windows.first else {
+            return
+        }
+        
+        window.endEditing(true)
+    }
+    
+    @objc func tapGesture() {
+        /// Hide DropDown PickerView
+        let scene = UIApplication.shared.connectedScenes
+        guard let windowScene = scene.first as? UIWindowScene,
+              let window = windowScene.windows.first else {
+            return
+        }
+        
+        window.endEditing(true)
+        UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+    
     func addAnimationView(jsonName name: String, specificView: UIView, speed: CGFloat, orignPosition: (x: CGFloat,y: CGFloat), frameTime: (from: CGFloat, to: CGFloat), completion: @escaping (Bool, LottieAnimationView) -> ()) {
         let animationView = LottieAnimationView()
         let animation = LottieAnimation.named(name)

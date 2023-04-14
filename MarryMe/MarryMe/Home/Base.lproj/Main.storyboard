@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-r1-k2A" customClass="CustomView" customModule="MarryMe" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-r1-k2A" customClass="CustomView" customModule="MarryMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -29,7 +28,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-eA-Pjv">
-                                <rect key="frame" x="46.666666666666657" y="138" width="300" height="300"/>
+                                <rect key="frame" x="46.666666666666657" y="172" width="300" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Skn-BW-L7L"/>
@@ -37,7 +36,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question &amp; Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-LK-K5F">
-                                <rect key="frame" x="74.333333333333329" y="473" width="244.33333333333337" height="50"/>
+                                <rect key="frame" x="74.333333333333329" y="507" width="244.33333333333337" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XBe-mR-ZXE"/>
                                 </constraints>
@@ -46,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxU-YT-I7n">
-                                <rect key="frame" x="126.66666666666669" y="598" width="140" height="70"/>
+                                <rect key="frame" x="126.66666666666669" y="632" width="140" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="GhT-PT-FkP"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="cuq-UK-ecF"/>
@@ -69,7 +68,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RrI-LK-K5F" firstAttribute="top" secondItem="OsK-eA-Pjv" secondAttribute="bottom" constant="35" id="01L-jY-PHd"/>
@@ -79,7 +77,7 @@
                             <constraint firstItem="CxU-YT-I7n" firstAttribute="top" secondItem="OsK-eA-Pjv" secondAttribute="bottom" constant="160" id="JTw-S2-7Zv"/>
                             <constraint firstItem="4tK-r1-k2A" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="YNu-6w-N57"/>
                             <constraint firstItem="OsK-eA-Pjv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="loy-nP-K91"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CxU-YT-I7n" secondAttribute="bottom" constant="150" id="ndW-3k-oQD"/>
+                            <constraint firstAttribute="bottom" secondItem="CxU-YT-I7n" secondAttribute="bottom" constant="150" id="ndW-3k-oQD"/>
                             <constraint firstAttribute="trailing" secondItem="4tK-r1-k2A" secondAttribute="trailing" id="ocB-r9-Ogy"/>
                             <constraint firstItem="4tK-r1-k2A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p7X-JJ-1Nc"/>
                         </constraints>
@@ -101,6 +99,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w2H-LE-pfW">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

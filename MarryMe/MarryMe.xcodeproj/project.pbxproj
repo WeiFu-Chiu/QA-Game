@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C7C9F1233262A2E91C887C6 /* Pods_MarryMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063ECA18BEC373388B45DA53 /* Pods_MarryMe.framework */; };
+		7102882729E9272800280F23 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7102882629E9272800280F23 /* Content.storyboard */; };
+		7102882929E9275400280F23 /* imageSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102882829E9275400280F23 /* imageSliderCollectionViewCell.swift */; };
 		71A7CEFF29E5219D00A09AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CEFE29E5219D00A09AAA /* AppDelegate.swift */; };
 		71A7CF0129E5219D00A09AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CF0029E5219D00A09AAA /* SceneDelegate.swift */; };
 		71A7CF0329E5219D00A09AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CF0229E5219D00A09AAA /* ViewController.swift */; };
@@ -15,10 +17,11 @@
 		71A7CF0829E5219E00A09AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF0729E5219E00A09AAA /* Assets.xcassets */; };
 		71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF0929E5219E00A09AAA /* LaunchScreen.storyboard */; };
 		71A7CF1529E5313D00A09AAA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7CF1429E5313D00A09AAA /* CustomView.swift */; };
-		71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A7CF1629E5400F00A09AAA /* Content.storyboard */; };
 		71E3484529E7E4A700FDC335 /* new-mail.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484329E7E4A700FDC335 /* new-mail.json */; };
 		71E3484629E7E4A700FDC335 /* text-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E3484429E7E4A700FDC335 /* text-icon.json */; };
 		71E3484829E7F59700FDC335 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3484729E7F59700FDC335 /* BaseViewController.swift */; };
+		71E3484A29E9222900FDC335 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3484929E9222900FDC335 /* main.swift */; };
+		71E3484C29E9240A00FDC335 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E3484B29E9240A00FDC335 /* CustomTextField.swift */; };
 		71FF8AD929E5426200B8BAAE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FF8AD829E5426200B8BAAE /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,8 @@
 		063ECA18BEC373388B45DA53 /* Pods_MarryMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarryMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		216BB259430614A8247772BB /* Pods-MarryMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarryMe.release.xcconfig"; path = "Target Support Files/Pods-MarryMe/Pods-MarryMe.release.xcconfig"; sourceTree = "<group>"; };
 		3D8EC7ECAFAF8AFEF7D279B1 /* Pods-MarryMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarryMe.debug.xcconfig"; path = "Target Support Files/Pods-MarryMe/Pods-MarryMe.debug.xcconfig"; sourceTree = "<group>"; };
+		7102882629E9272800280F23 /* Content.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		7102882829E9275400280F23 /* imageSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		71A7CEFB29E5219D00A09AAA /* MarryMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarryMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A7CEFE29E5219D00A09AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A7CF0029E5219D00A09AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,10 +40,11 @@
 		71A7CF0A29E5219E00A09AAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A7CF0C29E5219E00A09AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71A7CF1429E5313D00A09AAA /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		71A7CF1629E5400F00A09AAA /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 		71E3484329E7E4A700FDC335 /* new-mail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "new-mail.json"; sourceTree = "<group>"; };
 		71E3484429E7E4A700FDC335 /* text-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "text-icon.json"; sourceTree = "<group>"; };
 		71E3484729E7F59700FDC335 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		71E3484929E9222900FDC335 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		71E3484B29E9240A00FDC335 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		71FF8AD829E5426200B8BAAE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,13 +98,10 @@
 		71A7CEFD29E5219D00A09AAA /* MarryMe */ = {
 			isa = PBXGroup;
 			children = (
-				71A7CF0229E5219D00A09AAA /* ViewController.swift */,
-				71A7CF0429E5219D00A09AAA /* Main.storyboard */,
+				71E3484D29E926FF00FDC335 /* Home */,
 				71A7CF0C29E5219E00A09AAA /* Info.plist */,
 				71A7CF1329E5311E00A09AAA /* Utities */,
 				71A7CF1229E5310300A09AAA /* Support Files */,
-				71A7CF1629E5400F00A09AAA /* Content.storyboard */,
-				71FF8AD829E5426200B8BAAE /* ContentViewController.swift */,
 			);
 			path = MarryMe;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 			children = (
 				71E3484129E7E47A00FDC335 /* Assets */,
 				71A7CEFE29E5219D00A09AAA /* AppDelegate.swift */,
+				71E3484929E9222900FDC335 /* main.swift */,
 				71A7CF0029E5219D00A09AAA /* SceneDelegate.swift */,
 				71A7CF0729E5219E00A09AAA /* Assets.xcassets */,
 				71A7CF0929E5219E00A09AAA /* LaunchScreen.storyboard */,
@@ -120,6 +124,7 @@
 			children = (
 				71A7CF1429E5313D00A09AAA /* CustomView.swift */,
 				71E3484729E7F59700FDC335 /* BaseViewController.swift */,
+				71E3484B29E9240A00FDC335 /* CustomTextField.swift */,
 			);
 			path = Utities;
 			sourceTree = "<group>";
@@ -139,6 +144,26 @@
 				71E3484429E7E4A700FDC335 /* text-icon.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		71E3484D29E926FF00FDC335 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				71E3484E29E9270C00FDC335 /* Content */,
+				71A7CF0229E5219D00A09AAA /* ViewController.swift */,
+				71A7CF0429E5219D00A09AAA /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		71E3484E29E9270C00FDC335 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7102882629E9272800280F23 /* Content.storyboard */,
+				71FF8AD829E5426200B8BAAE /* ContentViewController.swift */,
+				7102882829E9275400280F23 /* imageSliderCollectionViewCell.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71A7CF1729E5400F00A09AAA /* Content.storyboard in Resources */,
 				71E3484629E7E4A700FDC335 /* text-icon.json in Resources */,
+				7102882729E9272800280F23 /* Content.storyboard in Resources */,
 				71A7CF0B29E5219E00A09AAA /* LaunchScreen.storyboard in Resources */,
 				71E3484529E7E4A700FDC335 /* new-mail.json in Resources */,
 				71A7CF0829E5219E00A09AAA /* Assets.xcassets in Resources */,
@@ -260,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FF8AD929E5426200B8BAAE /* ContentViewController.swift in Sources */,
+				71E3484A29E9222900FDC335 /* main.swift in Sources */,
 				71A7CF0329E5219D00A09AAA /* ViewController.swift in Sources */,
 				71A7CF1529E5313D00A09AAA /* CustomView.swift in Sources */,
+				71E3484C29E9240A00FDC335 /* CustomTextField.swift in Sources */,
+				7102882929E9275400280F23 /* imageSliderCollectionViewCell.swift in Sources */,
 				71A7CEFF29E5219D00A09AAA /* AppDelegate.swift in Sources */,
 				71A7CF0129E5219D00A09AAA /* SceneDelegate.swift in Sources */,
 				71E3484829E7F59700FDC335 /* BaseViewController.swift in Sources */,
