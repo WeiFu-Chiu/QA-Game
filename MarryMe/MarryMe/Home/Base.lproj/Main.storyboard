@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,15 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-r1-k2A" customClass="CustomView" customModule="MarryMe" customModuleProvider="target">
+                            <view contentMode="scaleAspectFill" id="4tK-r1-k2A" customClass="CustomView" customModule="MarryMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.79222653838325796" green="0.6858440135917232" blue="0.28815122735703536" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.86619768099547512" green="0.74704000304346441" blue="0.31326050958584739" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.81103309946923074" green="0.7287351636498165" blue="0.45679734027868624" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.87795178167420818" green="0.78822367512927405" blue="0.49326300154184932" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                        <point key="value" x="0.0" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                        <point key="value" x="1" y="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -68,6 +76,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gh8-V9-Dql"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RrI-LK-K5F" firstAttribute="top" secondItem="OsK-eA-Pjv" secondAttribute="bottom" constant="35" id="01L-jY-PHd"/>

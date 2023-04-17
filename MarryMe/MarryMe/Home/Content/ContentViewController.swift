@@ -34,9 +34,9 @@ class ContentViewController: BaseViewController {
             UIImage(named: "qa")
         ]
         
-        imageSliderCollectionView.delegate = self
-        imageSliderCollectionView.dataSource = self
-        sliferPageControl.numberOfPages = imageList.count
+//        imageSliderCollectionView.delegate = self
+//        imageSliderCollectionView.dataSource = self
+//        sliferPageControl.numberOfPages = imageList.count
     }
     
     

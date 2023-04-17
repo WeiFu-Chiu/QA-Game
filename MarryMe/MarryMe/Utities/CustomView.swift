@@ -16,6 +16,18 @@ class CustomView: UIView {
         }
     }
     
+    @IBInspectable var startPoint: CGPoint = CGPoint(x: 0,y: 0) {
+        didSet {
+            updateView()
+        }
+    }
+    
+    @IBInspectable var endPoint: CGPoint = CGPoint(x: 0,y: 0) {
+        didSet {
+            updateView()
+        }
+    }
+    
     /// 陰影水平偏移量
     @IBInspectable var shadowOffsetWidth: CGFloat = 0 {
         didSet {
@@ -85,8 +97,8 @@ class CustomView: UIView {
             let gradientLayer = CAGradientLayer()
             gradientLayer.frame = self.bounds
             gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
-            gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-            gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+            gradientLayer.startPoint = startPoint
+            gradientLayer.endPoint = endPoint
             self.layer.addSublayer(gradientLayer)
         }
         
