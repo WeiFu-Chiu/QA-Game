@@ -22,21 +22,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.79222653840000001" green="0.68584401360000002" blue="0.28815122739999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.48347448440567042" green="0.63694931695916812" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.81103309950000002" green="0.72873516360000001" blue="0.45679734030000002" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.81103309950000002" green="0.68643523314162658" blue="0.69067749899621778" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
-                                        <point key="value" x="1" y="0.5"/>
+                                        <point key="value" x="0.5" y="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
-                                        <point key="value" x="0.5" y="1"/>
+                                        <point key="value" x="0.5" y="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是非題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-qz-PP0">
-                                <rect key="frame" x="180" y="48" width="54" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q &amp; A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-qz-PP0">
+                                <rect key="frame" x="181" y="48" width="52" height="25.5"/>
                                 <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
                                 <color key="textColor" red="0.27944711538461542" green="0.24405281660413372" blue="0.23885397507721093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -54,8 +54,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5ss-gQ-kEe">
-                                <rect key="frame" x="57" y="398.5" width="300" height="88"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5ss-gQ-kEe">
+                                <rect key="frame" x="57" y="433.5" width="300" height="98"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-1S-ZWz" customClass="CustomTextField" customModule="MarryMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
@@ -66,13 +66,13 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEm-n6-NIU">
-                                        <rect key="frame" x="0.0" y="34" width="300" height="24"/>
+                                        <rect key="frame" x="0.0" y="39" width="300" height="24"/>
                                         <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-A3-4Oj">
-                                        <rect key="frame" x="0.0" y="58" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="68" width="300" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="l4M-0f-Gm9"/>
@@ -141,7 +141,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cbl-PR-frA" secondAttribute="trailing" constant="10" id="0qY-hE-tX8"/>
-                            <constraint firstItem="5ss-gQ-kEe" firstAttribute="top" secondItem="Cbl-PR-frA" secondAttribute="bottom" constant="-25" id="0t6-r2-Gpr"/>
+                            <constraint firstItem="5ss-gQ-kEe" firstAttribute="top" secondItem="Cbl-PR-frA" secondAttribute="bottom" constant="10" id="0t6-r2-Gpr"/>
                             <constraint firstItem="Cby-py-1dU" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="3xq-s5-E4i"/>
                             <constraint firstItem="o7o-Xp-NI2" firstAttribute="bottom" secondItem="Cbl-PR-frA" secondAttribute="bottom" constant="-125" id="56w-1e-6Tb"/>
                             <constraint firstItem="Cbl-PR-frA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="6Pn-vv-vT9"/>
@@ -167,11 +167,14 @@
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="xx8-A3-4Oj" id="wEI-Nx-FvA"/>
+                        <outlet property="enterStackView" destination="5ss-gQ-kEe" id="Jha-jY-swy"/>
                         <outlet property="enterTextField" destination="1nW-1S-ZWz" id="TIy-9A-hlg"/>
                         <outlet property="errorLabel" destination="OEm-n6-NIU" id="6Fk-lM-VWQ"/>
                         <outlet property="noButton" destination="YJW-Y9-LhP" id="E7Y-Cf-czX"/>
+                        <outlet property="noLabel" destination="UJK-l4-qMD" id="ctA-0j-kqK"/>
                         <outlet property="questionLabel" destination="o7o-Xp-NI2" id="yAp-e2-joE"/>
                         <outlet property="yesButton" destination="MuA-nA-zme" id="h8k-UU-Bwb"/>
+                        <outlet property="yesLabel" destination="PLS-E2-eec" id="gLE-wq-Nej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

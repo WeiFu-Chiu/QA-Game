@@ -13,7 +13,7 @@ class ViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addAnimationView(jsonName: "text-icon", specificView: logoView, speed: 0.7, orignPosition: (x: 0, y: 0), frameTime: (from: 0, to: 60), completion: { success, animationView in
+        addAnimationView(jsonName: "text-icon", specificView: logoView, speed: 0.7, loopMode: .loop, orignPosition: (x: 0, y: 0), frameTime: (from: 0, to: 60), completion: { success, animationView in
             if success {
                 
             }

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@IBDesignable
 class CustomView: UIView {
     @IBInspectable var startColor: UIColor = .clear
     @IBInspectable var endColor: UIColor = .clear {

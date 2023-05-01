@@ -19,6 +19,7 @@ class BaseViewController: UIViewController {
         self.view.addGestureRecognizer(tapGestureRecognizer)
         
     }
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
         
@@ -43,7 +44,7 @@ class BaseViewController: UIViewController {
         UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
-    func addAnimationView(jsonName name: String, specificView: UIView, speed: CGFloat, orignPosition: (x: CGFloat,y: CGFloat), frameTime: (from: CGFloat, to: CGFloat), completion: @escaping (Bool, LottieAnimationView) -> ()) {
+    func addAnimationView(jsonName name: String, specificView: UIView, speed: CGFloat, loopMode: LottieLoopMode, orignPosition: (x: CGFloat,y: CGFloat), frameTime: (from: CGFloat, to: CGFloat), completion: @escaping (Bool, LottieAnimationView) -> ()) {
         let animationView = LottieAnimationView()
         let animation = LottieAnimation.named(name)
         animationView.animation = animation
@@ -61,7 +62,7 @@ class BaseViewController: UIViewController {
             animationView.trailingAnchor.constraint(equalTo: specificView.trailingAnchor),
             animationView.bottomAnchor.constraint(equalTo: specificView.bottomAnchor)
         ])
-        animationView.play(fromFrame: frameTime.from, toFrame: frameTime.to, loopMode: .loop, completion: { finished in
+        animationView.play(fromFrame: frameTime.from, toFrame: frameTime.to, loopMode: loopMode, completion: { finished in
             if finished {
                 completion(finished, animationView)
             }
